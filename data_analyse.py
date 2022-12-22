@@ -29,7 +29,7 @@ def checkprice(file_count):
       reading_file()
    else:
       bool=True
-      file="C:/Users/shihab/Downloads/messages{}.html".format(file_count)
+      file="messages{}.html".format(file_count)
       with open(file) as file:
          soup = BeautifulSoup(file, 'html.parser')
       while bool:
@@ -56,7 +56,7 @@ def checkprice(file_count):
 def reading_file():
    months=[]
    dic={}
-   file="C:/Users/shihab/Downloads/price_data.txt"
+   file="price_data.txt"
    f = open(file, "r")
    for data in f:
       if len(data)==22:
