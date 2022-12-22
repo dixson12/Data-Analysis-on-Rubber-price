@@ -10,7 +10,7 @@ def check_file():
       f = open("price_data.txt", "r")
       try:
          f = open("filtered_price_data.txt", "r")
-         months=['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jun', 'Mar', 'Apr', 'May', 'Feb', 'Jan']
+         months=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
          drawing_graphs("filtered_price_data.txt",months)
       
       except:
